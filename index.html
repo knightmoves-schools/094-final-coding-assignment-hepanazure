@@ -1,4 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <!--Put your code here-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gadget Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tech Gadget Store</h1>
+        <a href="https://google.com" target="_blank">Visit Our Partner Site</a>
+    </header>
+
+    <main class="container">
+        <section class="products">
+            <h2>Available Items</h2>
+            <div class="item-list">
+                <div class="item">
+                    <img src="https://placeholder.com" alt="Wireless Mouse">
+                    <div class="item-info">
+                        <p class="name">Wireless Mouse</p>
+                        <p class="price">$25</p>
+                        <button class="add-btn" data-name="Wireless Mouse" data-price="25">Add</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://placeholder.com" alt="Mechanical Keyboard">
+                    <div class="item-info">
+                        <p class="name">Mechanical Keyboard</p>
+                        <p class="price">$75</p>
+                        <button class="add-btn" data-name="Mechanical Keyboard" data-price="75">Add</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://placeholder.com" alt="USB-C Hub">
+                    <div class="item-info">
+                        <p class="name">USB-C Hub</p>
+                        <p class="price">$40</p>
+                        <button class="add-btn" data-name="USB-C Hub" data-price="40">Add</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <div class="cart-total">
+                <strong>Total: $<span id="total-price">0</span></strong>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
 </html>
